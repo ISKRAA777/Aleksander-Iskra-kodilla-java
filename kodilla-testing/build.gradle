@@ -1,0 +1,4 @@
+String title;
+String author;
+int publicationYear;
+
