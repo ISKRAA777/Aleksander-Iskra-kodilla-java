@@ -1,9 +1,9 @@
 package ZAD9492_Kolekcjonujemy_figury;
 
-public class Circle implements Shape {
+public class Circle_ implements Shape {
     private double r;
 
-    public Circle(double r) {
+    public Circle_(double r) {
         this.r = r;
     }
 
