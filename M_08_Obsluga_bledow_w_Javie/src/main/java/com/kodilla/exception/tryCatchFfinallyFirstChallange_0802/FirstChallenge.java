@@ -1,4 +1,4 @@
-package com.kodilla.exception;
+package com.kodilla.exception.tryCatchFfinallyFirstChallange_0802;
 
 public class FirstChallenge {
     public double divide(double a, double b) throws ArithmeticException {
