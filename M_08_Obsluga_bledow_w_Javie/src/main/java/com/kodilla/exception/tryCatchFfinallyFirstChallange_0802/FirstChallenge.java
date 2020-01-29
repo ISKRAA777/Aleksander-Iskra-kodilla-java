@@ -17,7 +17,7 @@ public class FirstChallenge {
 
         FirstChallenge firstChallenge = new FirstChallenge();
         try {
-        double result = firstChallenge.divide(3, 0);
+            double result = firstChallenge.divide(3, 0);
             System.out.println(result);
         } catch (ArithmeticException a) {
             System.out.println("Dzielisz przez zero");
@@ -27,3 +27,4 @@ public class FirstChallenge {
 
 
     }
+}
