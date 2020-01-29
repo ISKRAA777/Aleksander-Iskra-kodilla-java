@@ -9,18 +9,21 @@ public class FirstChallenge {
     }
 
     /**
-     * This main can throw an ArithmeticException!!!
+     * This main can throw an ArithmeticException
      *
      * @param args
      */
     public static void main(String[] args) {
 
         FirstChallenge firstChallenge = new FirstChallenge();
-
+        try {
         double result = firstChallenge.divide(3, 0);
-
-        System.out.println(result);
+            System.out.println(result);
+        } catch (ArithmeticException a) {
+            System.out.println("Dzielisz przez zero");
+        } finally {
+            System.out.println("to działa ");
+        }
 
 
     }
-}
