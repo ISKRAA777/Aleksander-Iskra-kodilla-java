@@ -1,7 +1,8 @@
 package com.kodilla.good.patterns.challenges.Fly_0902;
 
 import java.util.Objects;
-//tworzymy klasę lotów by móc się posługiwać obiektami klasy przy dodawaniu ich do listy lotów, a później do ich
+//tworzymy klasę lotów by móc się posługiwać obiektami klasy przy dodawaniu ich do listy lotów, a
+// później do ich
 // wyszukiwania
 
 public class Flight {

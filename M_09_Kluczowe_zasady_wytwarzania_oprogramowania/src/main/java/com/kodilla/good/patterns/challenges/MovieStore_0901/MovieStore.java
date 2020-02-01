@@ -28,18 +28,20 @@ public class MovieStore {
 
         return booksTitlesWithTranslations;
     }
-    //wykonaj iterację po poniższej mapie tytułów i wyświetl wszystkie tytuły w jednym ciągu separując je wykrzyknikiem:
+    //wykonaj iterację po poniższej mapie tytułów i wyświetl wszystkie tytuły w jednym ciągu
+    // separując je wykrzyknikiem:
     public void steam1(Map<String, List<String>> movies){
-// przyjmujesz w argumencie metody mape -> potem odwpłujesz się do values(tutułów)-> otwierasz steama ->
-        //wywyłujesz pętle forEach i w pętli wywołujesz lambdą tytuł i go wyświetlasz separując wykrzyknikiem(
-        //( w metodzie main wywołujesz wszystko
+// przyjmuję w argumencie metody mape -> potem odwołuję się do values(tutułów)-> otwieram steama ->
+        //wywołuję pętle forEach i w pętli wywołuję lambdą tytuł i go wyświetlam separując wykrzyknikiem(
+        //( w metodzie main wywołuję wszystko
         movies.values().stream().forEach(title -> System.out.print(title.toString()+"!"));
 
     }
 
     public void steam2(Map<String, List<String>> movies){
-//tutaj podobnie tylko musisz sam wyswietlić w sout i dodatkowo powołać się na entrySet,
-        //potem do flapMap i w niej masz entry-> czyli twój tytuł który łączysz poprzez joining( podajesz separator, prefix i suffix)
+//tutaj podobnie tylko muszę sam wyswietlić w sout i dodatkowo powołać się na entrySet,
+        //potem do flapMap i w niej jest entry-> czyli  tytuł który łączę poprzez
+        // joining( podaję separator, prefix i suffix)
         System.out.println(movies.entrySet().stream()
                 .flatMap(entry -> entry.getValue().stream())
                 .collect(Collectors.joining(" ! ", "All titles: ", ".")));

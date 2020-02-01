@@ -5,7 +5,7 @@ import com.kodilla.good.patterns.challenges.Food2door_0903.order.Process;
 import com.kodilla.good.patterns.challenges.Food2door_0903.order.Respository;
 import com.kodilla.good.patterns.challenges.Food2door_0903.producent.Producent;
 
-//Firma “Food2Door” zajmuje się dystrybucją lokalnych i świeżych produktów z okolicznych wiosek.
+//Firma Food2Door zajmuje się dystrybucją lokalnych i świeżych produktów z okolicznych wiosek.
 // Produkty można zamawiać przez internet, a następnie kurier dostarcza je do naszego domu.
 // W związku z jej dynamicznym rozwojem i pojawiającymi się nowymi producentami produktów,
 // system musi zostać rozszerzony o podsystem podłączenia producentów. Proces zamawiania produktów od różnych producentów
@@ -23,7 +23,7 @@ import com.kodilla.good.patterns.challenges.Food2door_0903.producent.Producent;
 //To zadanie jest naprawdę 'otwarte' na Twoją inwencję twórczą - spróbuj napisać rozwiązanie, które pozwoli na
 // sprawne 'dołączanie' do istniejącego systemu wielu nowych producentów. zakladamy, że całość systemu poza tym, co
 // zostało zawarte w powyższych punktach jest nieistotna - napisz kod odzwierciedlający tylko te wytyczne,
-// wymyślając jednocześnie drobne różnice w implementacji metody process() dla każdego producenta :)
+// wymyślając jednocześnie drobne różnice w implementacji metody process() dla każdego producenta
 public class Main {
     public static void main(String[] args) {
 
