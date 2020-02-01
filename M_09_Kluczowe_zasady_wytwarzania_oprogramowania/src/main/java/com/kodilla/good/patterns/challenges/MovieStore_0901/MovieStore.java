@@ -40,7 +40,7 @@ public class MovieStore {
 
     public void steam2(Map<String, List<String>> movies){
 //tutaj podobnie tylko muszę sam wyswietlić w sout i dodatkowo powołać się na entrySet,
-        //potem do flapMap i w niej jest entry-> czyli  tytuł który łączę poprzez
+        //potem do flapMap i w niej jest entry-> czyli  tytuł który łączę poprzez.....
         // joining( podaję separator, prefix i suffix)
         System.out.println(movies.entrySet().stream()
                 .flatMap(entry -> entry.getValue().stream())

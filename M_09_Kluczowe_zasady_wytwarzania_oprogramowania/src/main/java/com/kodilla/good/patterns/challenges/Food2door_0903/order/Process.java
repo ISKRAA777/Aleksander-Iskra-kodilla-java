@@ -14,7 +14,8 @@ public class Process {
 
     //metoda odpowiedzialna za zamówienia
     public void start(Producent producent) {
-        if (producent.process()) {              //jesli proces jest true czyli wszsystko jest ok to działa i tworzy nowe zamowieni
+        if (producent.process()) {              //jesli proces jest true czyli wszsystko jest ok to działa
+            // i tworzy nowe zamowieni
             respository.create(producent.getClass().getSimpleName(), producent.product(), producent.quantity());
             new OrderDTO(producent.product(), producent.quantity(), true);
         } else {        // jesli nie to zmienia zamówienie na false czyli je usuwa

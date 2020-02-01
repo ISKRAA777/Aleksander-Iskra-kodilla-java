@@ -1,4 +1,6 @@
-package com.kodilla.exception.Obsługa_wyjątku_SecondChallenge_0803;
+package com.kodilla.exception.Obsługa_wyjatku_SecondChallenge_0803;
+
+import com.kodilla.exception.Obsługa_wyjątku_SecondChallenge_0803.SecondChallenge;
 
 public class ExceptionHanding {
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class ExceptionHanding {
         try {
             secondChallenge.probablyIWillThrowException(2,4);
         } catch (Exception e) {
-            System.out.println("Błąd!!!!");
+            System.out.println("error !!!");
         }
     }
 }
