@@ -1,6 +1,5 @@
 package com.kodilla.good.patterns.challenges.Food2door_0904.producent;
 
-// firmy  z getterami i setterami a takze z implementacją process
 public class HealthyShop implements Producent {
     private String product;
     private double quantity;

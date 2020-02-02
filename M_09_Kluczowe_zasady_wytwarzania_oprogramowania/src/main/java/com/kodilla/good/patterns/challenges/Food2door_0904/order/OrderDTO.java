@@ -2,7 +2,6 @@ package com.kodilla.good.patterns.challenges.Food2door_0904.order;
 
 public class OrderDTO {
 
-
     private String product;
     private double quantity;
     private boolean isOrder;

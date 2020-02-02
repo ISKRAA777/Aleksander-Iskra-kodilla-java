@@ -1,7 +1,5 @@
 package com.kodilla.good.patterns.challenges.Food2door_0904.producent;
 
-// firmy  z getterami i setterami a takze z implementacją process
-
 public class ExtraFoodShop implements Producent {
     private String product;
     private double quantity;
@@ -24,5 +22,6 @@ public class ExtraFoodShop implements Producent {
     public boolean process() {
         System.out.println("Order processed for ExtraFoodShop: " + product + ", " + quantity);
         return true;
-    }}
+    }
+}
 
