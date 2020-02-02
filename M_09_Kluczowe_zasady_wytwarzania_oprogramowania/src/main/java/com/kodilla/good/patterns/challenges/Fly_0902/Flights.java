@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-//klasa odpowiedzialna za listę lotów, w niej są wszystkie loty programu
 public class Flights {
     private Set<Flight> listOfFlight = new HashSet<>();
 
