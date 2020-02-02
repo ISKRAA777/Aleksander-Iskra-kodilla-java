@@ -1,7 +1,7 @@
-package com.kodilla.good.patterns.challenges.Food2door_0903.order;
+package com.kodilla.good.patterns.challenges.Food2door_0904.order;
 
 
-import com.kodilla.good.patterns.challenges.Food2door_0903.producent.Producent;
+import com.kodilla.good.patterns.challenges.Food2door_0904.producent.Producent;
 
 // klasa odpowiedzalna za cały proces zamówienia
 public class Process {

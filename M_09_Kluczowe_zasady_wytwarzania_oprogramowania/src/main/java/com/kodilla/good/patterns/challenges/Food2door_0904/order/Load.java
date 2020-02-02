@@ -1,10 +1,10 @@
-package com.kodilla.good.patterns.challenges.Food2door_0903.order;
+package com.kodilla.good.patterns.challenges.Food2door_0904.order;
 
 
-import com.kodilla.good.patterns.challenges.Food2door_0903.producent.ExtraFoodShop;
-import com.kodilla.good.patterns.challenges.Food2door_0903.producent.GlutenFreeShop;
-import com.kodilla.good.patterns.challenges.Food2door_0903.producent.HealthyShop;
-import com.kodilla.good.patterns.challenges.Food2door_0903.producent.Producent;
+import com.kodilla.good.patterns.challenges.Food2door_0904.producent.ExtraFoodShop;
+import com.kodilla.good.patterns.challenges.Food2door_0904.producent.GlutenFreeShop;
+import com.kodilla.good.patterns.challenges.Food2door_0904.producent.HealthyShop;
+import com.kodilla.good.patterns.challenges.Food2door_0904.producent.Producent;
 
 public class Load {
 //klasa odpoweidzialna za podział zamówień
