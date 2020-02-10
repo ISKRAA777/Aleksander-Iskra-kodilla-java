@@ -1,6 +1,7 @@
 package forumuser_0703;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Forum {
     private final List<ForumUser> theForumUser = new ArrayList<>();

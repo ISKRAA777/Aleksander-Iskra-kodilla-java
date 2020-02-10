@@ -1,5 +1,9 @@
 package forumuser_0703;
 
+import java.time.LocalDate;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class StreamMain {
     public static void main(String[] args) {
         Forum theForum = new Forum();
@@ -15,3 +19,4 @@ public class StreamMain {
                 .forEach(System.out::println);
     }
 }
+

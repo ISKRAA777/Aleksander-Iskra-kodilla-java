@@ -1,8 +1,10 @@
 package forumuser_0703;
 
-public class ForumUser {
-    private final int id;
-    private final String username;
+import java.time.LocalDate;
+
+public final class ForumUser {
+    private final int idUser;
+    private final String nickUser;
     private final char sex;
     private final LocalDate birthDate;
     private final int quantityPosts;
@@ -46,7 +48,4 @@ public class ForumUser {
                 ", quantityPosts=" + quantityPosts +
                 '}';
     }
-
-
 }
-
