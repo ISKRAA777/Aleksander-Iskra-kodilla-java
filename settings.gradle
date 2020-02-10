@@ -10,4 +10,7 @@ include 'R_0901_kodilla-good-patterns'
 include 'M_08_Obsluga_bledow_w_Javie'
 include 'M_10_kodilla-spring2'
 include 'M_07_com.kodilla-steam'
+include 'M_13_Spring_oraz_Hibernate'
+include 'Mapowanie_obiektowo-relacyjneORM_1301'
+include 'kodilla-hibernate'
 
