@@ -12,7 +12,7 @@ public class Flights {
         airport.put("Chopina", true);
 
         if (airport.containsKey(flight.getArrivalAirport())) {
-            System.out.println("Arrival airport possible: " + flight.getArrivalAirport());
+            System.out.println("Arrival airport possible : " + flight.getArrivalAirport());
         } else
             throw new RouteNotFoundException("No such airport");
 
