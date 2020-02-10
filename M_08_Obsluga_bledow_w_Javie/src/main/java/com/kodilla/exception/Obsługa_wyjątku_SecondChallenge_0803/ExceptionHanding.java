@@ -1,6 +1,4 @@
-package com.kodilla.exception.Obsługa_wyjatku_SecondChallenge_0803;
-
-import com.kodilla.exception.Obsługa_wyjątku_SecondChallenge_0803.SecondChallenge;
+package com.kodilla.exception.Obsługa_wyjątku_SecondChallenge_0803;
 
 public class ExceptionHanding {
     public static void main(String[] args) {
