@@ -1,10 +1,10 @@
 package immutable_0702;
 
 public final class ForumUser {
-    private String username;
-    private String realname;
+    private final String username;
+    private final String realname;
 
-    public ForumUser(String username, String realname) {
+    public ForumUser(final String username, final String realname) {
         this.username = username;
         this.realname = realname;
     }
@@ -13,16 +13,10 @@ public final class ForumUser {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getRealname() {
         return realname;
     }
 
-    public void setRealname(String realname) {
-        this.realname = realname;
-    }
 }
 
