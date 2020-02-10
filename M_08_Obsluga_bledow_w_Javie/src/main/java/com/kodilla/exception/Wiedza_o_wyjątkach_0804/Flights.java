@@ -7,16 +7,14 @@ public class Flights {
     private Map<String, Boolean> flightList = new HashMap<>();
 
 
-    public void findFilght(Flight flight){
-        flightList.put("Chopina", true);
-       for(String s : flightList.keySet()){
-           if(!s.equals(flight.getDepartureAirport())){
-               throw new RouteNotFoundException("Nie ma takiego lotniska");
-           }else{
-               System.out.println("Lotnisko "+s);
-           }
+    public void findFilght(Flight flight) {
+        Map<String, Boolean> airport = new HashMap<>();
+        airport.put("Chopina", true);
 
-       }
+        if (airport.containsKey(flight.getArrivalAirport())) {
+            System.out.println("Arrival airport possible: " + flight.getArrivalAirport());
+        } else
+            throw new RouteNotFoundException("No such airport");
 
     }
 }
