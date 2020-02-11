@@ -26,7 +26,7 @@ public class BoardTestSuite {
                 LocalDate.now().minusDays(20),
                 LocalDate.now().plusDays(30));
         Task task2 = new Task("HQLs for analysis",
-                "Prepare some HQL queries for analysis",
+                "Prepare some HQL queries for analysis ",
                 user1,
                 user2,
                 LocalDate.now().minusDays(20),
