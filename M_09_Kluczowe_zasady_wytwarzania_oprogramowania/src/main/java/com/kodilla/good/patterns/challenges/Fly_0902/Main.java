@@ -8,6 +8,5 @@ public class Main {
         search.searchTo("Gdansk");
         search.searchThrough( "Wroclaw", "Warszawa");
 
-
     }
 }
