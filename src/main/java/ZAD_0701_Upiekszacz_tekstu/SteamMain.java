@@ -1,6 +1,6 @@
 //package ZAD9690_Upiekszacz_tekstu;
 
-import ZAD9690_Upiekszacz_tekstu.PoemBiutifier;
+import ZAD_0701_Upiekszacz_tekstu.PoemBiutifier;
 
 public class SteamMain {
     public static void main(String[] args) {

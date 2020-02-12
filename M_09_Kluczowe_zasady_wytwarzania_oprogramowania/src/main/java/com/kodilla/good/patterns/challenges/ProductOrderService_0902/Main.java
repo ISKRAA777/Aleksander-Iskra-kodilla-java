@@ -15,7 +15,7 @@ public class Main {
 
         orderProcessor.process(orderRequestRetriever
                 .retrieve(new User("Adam", "Małysz", "Wisła, 00-000 Królewska 12", 100),
-                        new Product("narty",50)));
+                        new Product("narty", 50)));
 
     }
 

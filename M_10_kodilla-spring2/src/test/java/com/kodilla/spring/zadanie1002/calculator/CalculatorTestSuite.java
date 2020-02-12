@@ -22,8 +22,8 @@ public class CalculatorTestSuite {
         double mul = calculator.mul(2, 6);
         double div = calculator.div(18, 9);
         //then ( assercja - sprawdzanie wynikólw)
-        Assert.assertEquals(12,add,0.01);
-        Assert.assertEquals( -2, sub, 0.0001 );
+        Assert.assertEquals(12, add, 0.01);
+        Assert.assertEquals(-2, sub, 0.0001);
         Assert.assertEquals(12, mul, 0.01);
         Assert.assertEquals(2, div, 0.1);
 

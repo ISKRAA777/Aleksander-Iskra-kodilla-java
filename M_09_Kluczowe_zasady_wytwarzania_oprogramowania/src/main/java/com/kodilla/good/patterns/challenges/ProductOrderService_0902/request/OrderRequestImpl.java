@@ -10,6 +10,6 @@ public class OrderRequestImpl {
     public OrderRequest retrieve(User user, Product product) {
         LocalDateTime orderFrom = LocalDateTime.now();
         String deliver = "DHL";
-        return new OrderRequest(user, orderFrom,deliver,product);
+        return new OrderRequest(user, orderFrom, deliver, product);
     }
 }

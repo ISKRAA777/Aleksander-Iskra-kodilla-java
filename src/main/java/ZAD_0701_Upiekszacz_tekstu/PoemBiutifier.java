@@ -1,4 +1,4 @@
-package ZAD9690_Upiekszacz_tekstu;
+package ZAD_0701_Upiekszacz_tekstu;
 
 public class PoemBiutifier {
     // poniżej - metoda Stwórz klasę PoemBeautifier, która będzie posiadała metodę beautify, której

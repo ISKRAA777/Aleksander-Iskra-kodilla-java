@@ -1,6 +1,6 @@
 package com.kodilla.testing.shape_0604;
 
-public class Square implements Shape{
+public class Square implements Shape {
     private final static String name = "Square";
     private double edgeLength;
 

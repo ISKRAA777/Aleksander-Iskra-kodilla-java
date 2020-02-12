@@ -9,20 +9,19 @@
 //numerów zamówień. Pamiętaj, aby sprawdzić, czy Twoje rozwiązanie pozwala
 // na przechowywanie zduplikowanych wartości
 
-package ZAD9391_Set_Zduplikowane_zamowienia;
+package ZAD_0402_Set_Zduplikowane_zamowienia;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Zduplikowane_zamowienie_9391 {
     public static void main(String[] args) {
-        Set<String>order = new HashSet<>();
+        Set<String> order = new HashSet<>();
         order.add("Order7");
         order.add("Order1");
         order.add("Order3");
         order.add("Order7");
-        for (String s: order) {
+        for (String s : order) {
             System.out.println(s);
         }
     }

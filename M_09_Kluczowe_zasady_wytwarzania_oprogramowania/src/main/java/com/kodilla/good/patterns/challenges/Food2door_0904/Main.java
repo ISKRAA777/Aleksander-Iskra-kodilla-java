@@ -10,7 +10,7 @@ public class Main {
 
 
         Load order = new Load();
-        Producent producent = order.load("Mars", 20,"HealthyShop" );
+        Producent producent = order.load("Mars", 20, "HealthyShop");
         Process process = new Process(new Respository());
         process.start(producent);
     }

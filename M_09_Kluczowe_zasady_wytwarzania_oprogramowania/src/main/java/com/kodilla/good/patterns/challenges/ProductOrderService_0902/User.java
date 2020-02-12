@@ -46,7 +46,7 @@ public class User {
         this.money = money;
     }
 
-    public void addStaff(Product product){
+    public void addStaff(Product product) {
         staff.add(product);
     }
 }

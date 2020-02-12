@@ -5,9 +5,9 @@ public class Main {
 
 
         Search search = new Search();
-        search.searchFrom( "Poznan");
+        search.searchFrom("Poznan");
         search.searchTo("Gdansk");
-        search.searchThrough( "Wroclaw", "Warszawa");
+        search.searchThrough("Wroclaw", "Warszawa");
 
     }
 }

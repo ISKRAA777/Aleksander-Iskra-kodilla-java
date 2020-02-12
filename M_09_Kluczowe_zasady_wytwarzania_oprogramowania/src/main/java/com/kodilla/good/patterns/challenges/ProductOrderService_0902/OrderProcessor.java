@@ -16,13 +16,13 @@ public class OrderProcessor {
 
     public void process(OrderRequest orderRequest) {
 
-        if (orderService.order(orderRequest.getUser(),orderRequest.product)) {
+        if (orderService.order(orderRequest.getUser(), orderRequest.product)) {
             informationService.createOrder(orderRequest.getUser());
 
             informationService.acceptedOrder();
             orderRequest.user.addStaff(orderRequest.product);
-            orderRequest.user.setMoney(orderRequest.user.getMoney()-orderRequest.product.getPrice());
-             new OrderDto(orderRequest.getUser(), true);
+            orderRequest.user.setMoney(orderRequest.user.getMoney() - orderRequest.product.getPrice());
+            new OrderDto(orderRequest.getUser(), true);
         } else {
             System.out.println("Nie udało się zrealizować zamówienia");
             new OrderDto(orderRequest.getUser(), false);

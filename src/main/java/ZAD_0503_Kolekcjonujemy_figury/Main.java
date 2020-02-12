@@ -1,4 +1,4 @@
-package ZAD9492_Kolekcjonujemy_figury;
+package ZAD_0503_Kolekcjonujemy_figury;
 
 public class Main {
     public static void main(String[] args) {

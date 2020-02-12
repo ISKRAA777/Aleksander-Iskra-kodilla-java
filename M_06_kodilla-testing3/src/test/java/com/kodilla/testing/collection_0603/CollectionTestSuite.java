@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class CollectionTestSuite {
     @Test
-    public void testOddNumbersExterminatorEmptyList(){
+    public void testOddNumbersExterminatorEmptyList() {
         // given stan wejsciowy
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
         ArrayList<Integer> theList = new ArrayList<>();
@@ -18,10 +18,11 @@ public class CollectionTestSuite {
         ArrayList<Integer> result = exterminator.exterminate(theList);
 
         //sekcja then sprawdzenie wyników działania
-        Assert.assertEquals(0,result.size());
+        Assert.assertEquals(0, result.size());
     }
+
     @Test
-    public void testOddNumbersExterminatorNormalList(){
+    public void testOddNumbersExterminatorNormalList() {
         // given stan wejsciowy
         OddNumbersExterminator exterminator = new OddNumbersExterminator();
         ArrayList<Integer> theList = new ArrayList<>();
@@ -37,7 +38,7 @@ public class CollectionTestSuite {
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(2);
         expected.add(8);
-        Assert.assertEquals(expected,result);
+        Assert.assertEquals(expected, result);
     }
 }
 

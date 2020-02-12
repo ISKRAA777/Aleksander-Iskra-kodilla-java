@@ -1,6 +1,6 @@
-package ZAD9492_Kolekcjonujemy_figury;
+package ZAD_0503_Kolekcjonujemy_figury;
 
-public class Square implements Shape{
+public class Square implements Shape {
     private double a;
 
     public Square(double a) {
@@ -14,7 +14,7 @@ public class Square implements Shape{
 
     @Override
     public double getField() {
-        return a*a;
+        return a * a;
     }
 
     @Override

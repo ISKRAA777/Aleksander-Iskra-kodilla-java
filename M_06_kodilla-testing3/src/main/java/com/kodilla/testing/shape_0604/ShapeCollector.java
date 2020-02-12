@@ -11,16 +11,16 @@ public class ShapeCollector {
         return shapeCollection;
     }
 
-    public void addFigure(Shape shape){
+    public void addFigure(Shape shape) {
         shapeCollection.add(shape);
     }
 
-    public boolean removeFigure(Shape shape){
+    public boolean removeFigure(Shape shape) {
         return shapeCollection.remove(shape);
     }
 
-    public Shape getFigure(int n){
-        if(n<shapeCollection.size() && n>=0){
+    public Shape getFigure(int n) {
+        if (n < shapeCollection.size() && n >= 0) {
             return shapeCollection.get(n);
         } else {
             return null;
@@ -28,7 +28,7 @@ public class ShapeCollector {
 
     }
 
-    public void showFigures(){
+    public void showFigures() {
         System.out.println(shapeCollection.toString());
     }
 }

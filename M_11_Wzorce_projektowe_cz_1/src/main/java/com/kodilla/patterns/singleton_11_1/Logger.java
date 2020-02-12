@@ -3,6 +3,7 @@ package com.kodilla.patterns.singleton_11_1;
 public class Logger {
     private String lastLog = "";
     private static Logger loggerInstance;
+
     public void log(String log) {
         lastLog = log;
         System.out.println("Log: [" + log + "]");
@@ -12,9 +13,9 @@ public class Logger {
 
     }
 
-    public static Logger getInstance(){
+    public static Logger getInstance() {
         if (loggerInstance == null) {
-            synchronized(SettingsFileEngine.class) {
+            synchronized (SettingsFileEngine.class) {
                 if (loggerInstance == null) {
                     loggerInstance = new Logger();
                 }

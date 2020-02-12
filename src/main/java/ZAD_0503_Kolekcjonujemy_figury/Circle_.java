@@ -1,4 +1,4 @@
-package ZAD9492_Kolekcjonujemy_figury;
+package ZAD_0503_Kolekcjonujemy_figury;
 
 public class Circle_ implements Shape {
     private double r;
@@ -14,7 +14,7 @@ public class Circle_ implements Shape {
 
     @Override
     public double getField() {
-        return Math.PI*r*r;
+        return Math.PI * r * r;
     }
 
     @Override

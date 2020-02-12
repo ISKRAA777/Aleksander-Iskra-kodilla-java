@@ -1,7 +1,8 @@
-package ZAD9492_Kolekcjonujemy_figury;
+package ZAD_0503_Kolekcjonujemy_figury;
 
-public class Triangle implements Shape{
-private double a,h;
+public class Triangle implements Shape {
+    private double a, h;
+
     //konstruktor poniżej - tworzy obiekty klasy
     public Triangle(double a, double h) {
         this.a = a;
@@ -15,7 +16,7 @@ private double a,h;
 
     @Override
     public double getField() {
-        return .5*a*h;
+        return .5 * a * h;
     }
 
     @Override

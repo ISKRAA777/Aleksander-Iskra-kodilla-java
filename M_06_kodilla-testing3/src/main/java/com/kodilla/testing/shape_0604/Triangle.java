@@ -45,7 +45,7 @@ public class Triangle implements Shape {
 
     @Override
     public double getField() {
-        if(checkTriangleCondition()){
+        if (checkTriangleCondition()) {
             double halfOfCircuit = getHalfOfCircuit();
             return heronsPattern(halfOfCircuit);
         } else {
@@ -53,17 +53,17 @@ public class Triangle implements Shape {
         }
     }
 
-    private boolean checkTriangleCondition(){
-        return(edgeLengthA + edgeLengthB > edgeLengthC &&
+    private boolean checkTriangleCondition() {
+        return (edgeLengthA + edgeLengthB > edgeLengthC &&
                 edgeLengthA + edgeLengthC > edgeLengthB &&
                 edgeLengthB + edgeLengthC > edgeLengthA);
     }
 
-    private double getHalfOfCircuit(){
-        return (edgeLengthA + edgeLengthB + edgeLengthC)/2;
+    private double getHalfOfCircuit() {
+        return (edgeLengthA + edgeLengthB + edgeLengthC) / 2;
     }
 
     private double heronsPattern(double halfOfCircuit) {
-        return Math.sqrt(halfOfCircuit*(halfOfCircuit-edgeLengthA)*(halfOfCircuit-edgeLengthB)*(halfOfCircuit-edgeLengthC));
+        return Math.sqrt(halfOfCircuit * (halfOfCircuit - edgeLengthA) * (halfOfCircuit - edgeLengthB) * (halfOfCircuit - edgeLengthC));
     }
 }

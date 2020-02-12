@@ -5,11 +5,11 @@ import org.junit.Test;
 
 public class LoggerTestSuite {
     @Test
-    public void testLogger(){
+    public void testLogger() {
         // tworzymy instancję loggera
         Logger logger = Logger.getInstance();
         logger.log("test");
         // asercja
-        Assert.assertEquals("test" , logger.getLastLog());
+        Assert.assertEquals("test", logger.getLastLog());
     }
 }

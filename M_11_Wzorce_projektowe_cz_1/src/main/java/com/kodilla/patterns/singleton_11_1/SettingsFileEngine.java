@@ -10,7 +10,7 @@ public final class SettingsFileEngine {
     public static SettingsFileEngine getInstance() {
         //Zmodyfikowany kod Singletona, uwzględniający zabezpieczenie przed błędami wynikającymi z wielowątkowości
         if (settingsFileEngineInstance == null) {
-            synchronized(SettingsFileEngine.class) {
+            synchronized (SettingsFileEngine.class) {
                 if (settingsFileEngineInstance == null) {
                     settingsFileEngineInstance = new SettingsFileEngine();
                 }
