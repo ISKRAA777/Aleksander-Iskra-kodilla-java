@@ -19,6 +19,7 @@ public class Search {
                 .forEach(System.out::println);
     }
 
+
     public void searchThrough(String nameAirPort1, String nameAirPort2) {
         Set<Flight> list1 = flight.getListOfFlight().stream()
                 .filter(list -> list.getNameAirPortFrom().equals(nameAirPort1))

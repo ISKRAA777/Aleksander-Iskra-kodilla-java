@@ -7,6 +7,7 @@ import java.util.Set;
 public class Flights {
     private Set<Flight> listOfFlight = new HashSet<>();
 
+
     public Flights() {
         listOfFlight.add(new Flight("Gdansk", "Warszawa"));
         listOfFlight.add(new Flight("Krakow", "Poznan"));

@@ -6,6 +6,7 @@ public class Flight {
     private String nameAirPortFrom;
     private String nameAirPortTo;
 
+
     public Flight(String nameAirPortFrom, String nameAirPortTo) {
         this.nameAirPortFrom = nameAirPortFrom;
         this.nameAirPortTo = nameAirPortTo;
