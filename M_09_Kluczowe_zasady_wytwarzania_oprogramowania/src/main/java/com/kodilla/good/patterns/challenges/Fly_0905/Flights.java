@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges.Fly_0902;
+package com.kodilla.good.patterns.challenges.Fly_0905;
 
 import java.util.HashSet;
 import java.util.Set;

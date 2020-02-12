@@ -13,4 +13,5 @@ include 'M_07_com.kodilla-steam'
 include 'M_13_Spring_oraz_Hibernate'
 include 'Mapowanie_obiektowo-relacyjneORM_1301'
 include 'kodilla-hibernate'
+include 'M_06_kodilla-testing3'
 
