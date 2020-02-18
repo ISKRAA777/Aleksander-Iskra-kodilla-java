@@ -1,24 +1,25 @@
 package portfolio_1003;
 
 import org.springframework.context.annotation.*;
-
 @Configuration
 public class BoardConfig {
+    @Bean
+    public Board board() {
+        return new Board(toDoList(), inProgressList(), doneList());
+    }
 
     @Bean
-    public Board getBoard() {
-        return new Board(getToDoList(), getInProgressList(), getDoneList());
-    }
-
-    public TaskList getToDoList() {
+    public TaskList toDoList() {
         return new TaskList();
     }
 
-    public TaskList getInProgressList() {
+    @Bean
+    public TaskList inProgressList() {
         return new TaskList();
     }
 
-    public TaskList getDoneList() {
+    @Bean
+    public TaskList doneList() {
         return new TaskList();
     }
 }
