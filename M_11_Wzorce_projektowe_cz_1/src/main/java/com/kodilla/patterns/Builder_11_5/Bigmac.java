@@ -9,7 +9,7 @@ public class Bigmac {
     private final SouseType souse;
     private List<IngredientsType> ingredientsTypes;
 
-    public Bigmac(RollType roll, int burgers, SouseType souse, List<IngredientsType> ingredientsTypes) {
+    private Bigmac(RollType roll, int burgers, SouseType souse, List<IngredientsType> ingredientsTypes) {
         this.roll = roll;
         this.burgers = burgers;
         this.souse = souse;
