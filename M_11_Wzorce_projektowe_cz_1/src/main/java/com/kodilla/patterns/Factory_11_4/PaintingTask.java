@@ -1,22 +1,16 @@
 package com.kodilla.patterns.Factory_11_4;
 
-public interface Task {
-    void executeTask();
-    String getTaskName();
-    boolean isTaskExecuted();
-}
-
-public class DrivingTask implements Task {
-
+public class PaintingTask implements Task {
+    //PaintingTask o konstruktorze PaintingTask(String taskName, String color, String whatToPaint)
     private String taskName;
-    private String where;
-    private String using;
+    private String color;
+    private String whatToPaint;
     private boolean isExecuted;
 
-    public DrivingTask(String taskName, String where, String using) {
+    public PaintingTask(String taskName, String color, String whatToPaint) {
         this.taskName = taskName;
-        this.where = where;
-        this.using = using;
+        this.color = color;
+        this.whatToPaint = whatToPaint;
         isExecuted = false;
     }
 
