@@ -12,6 +12,7 @@ public class ShoppingTask implements Task {
         this.whatToBuy = whatToBuy;
         this.quantity = quantity;
         isExecuted = false;
+
     }
 
     @Override

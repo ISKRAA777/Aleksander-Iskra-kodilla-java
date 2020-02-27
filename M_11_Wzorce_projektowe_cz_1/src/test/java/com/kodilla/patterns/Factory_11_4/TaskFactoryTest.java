@@ -20,6 +20,7 @@ public class TaskFactoryTest {
         Assert.assertEquals("My list", shopping.getTaskName());
         Assert.assertFalse(beforeExecution);
         Assert.assertTrue(shopping.isTaskExecuted());
+
     }
 
     @Test
