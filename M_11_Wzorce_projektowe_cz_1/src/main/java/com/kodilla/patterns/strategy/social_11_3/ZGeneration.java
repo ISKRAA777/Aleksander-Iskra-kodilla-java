@@ -6,4 +6,4 @@ public class ZGeneration extends User {
         super(userName);
         this.socialPublisher = new FacebookPublisher();
     }
-}}
+}
