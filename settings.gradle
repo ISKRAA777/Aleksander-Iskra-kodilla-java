@@ -8,4 +8,5 @@ include 'M_10_kodilla-spring2'
 include 'M_11_Wzorce_projektowe_cz_1'
 include 'kodilla-hibernate_1301'
 include 'M_13_Hibernate'
+include 'M_12_kodilla-jdbc'
 
