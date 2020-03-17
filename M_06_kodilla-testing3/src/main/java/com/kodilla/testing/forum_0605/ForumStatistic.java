@@ -2,77 +2,80 @@ package com.kodilla.testing.forum_0605;
 
 public class ForumStatistic {
 
-    private int users;
-    private int posts;
-    private int comments;
-    private double postsPerUser;
-    private double commentsPerUser;
-    private double commentsPerPost;
+    private int usersQty;
+    private int postsQty;
+    private int commentsQty;
+    private double postsAvgPerUser;
+    private double commentsAvgPerUser;
+    private double commentsAvgPerPost;
 
-    public void calculateAdvStatistics(Statistics statistics) {
-        users = statistics.usersNames().size();
-        posts = statistics.postsCount();
-        comments = statistics.commentsCount();
-        postsPerUser = calculatePostsPerUser();
-        commentsPerUser = calculateCommentsPerUser();
-        commentsPerPost = calculateCommentsPerPost();
+    public int getUsersQty() {
+        return usersQty;
     }
 
-    private double calculatePostsPerUser() {
+    public int getPostsQty() {
+        return postsQty;
+    }
 
-        if (users > 0) {
-            return (double) posts / users;
+    public int getCommentsQty() {
+        return commentsQty;
+    }
+
+    public double getPostsAvgPerUser() {
+        return postsAvgPerUser;
+    }
+
+    public double getCommentsAvgPerUser() {
+        return commentsAvgPerUser;
+    }
+
+    public double getCommentsAvgPerPost() {
+        return commentsAvgPerPost;
+    }
+
+
+
+    public void calculateAdvStatistics(Statistics statistics){
+        usersQty = statistics.usersNames().size();
+        postsQty = statistics.postsCount();
+        commentsQty = statistics.commentsCount();
+        postsAvgPerUser = calculatePostsAvgPerUser();
+        commentsAvgPerUser = calculateCommentsAvgPerUser();
+        commentsAvgPerPost = calculateCommentsAvgPerPost();
+    }
+
+    private double calculatePostsAvgPerUser() {
+
+        if(usersQty>0){
+            return (double)postsQty/usersQty;
         } else {
             return 0;
         }
     }
 
-    private double calculateCommentsPerUser() {
-        if (users > 0) {
-            return (double) comments / users;
+    private double calculateCommentsAvgPerUser() {
+        if(usersQty>0){
+            return (double)commentsQty/usersQty;
         } else {
             return 0;
         }
     }
 
-    private double calculateCommentsPerPost() {
-        if (posts > 0) {
-            return (double) comments / posts;
+    private double calculateCommentsAvgPerPost() {
+        if(postsQty>0){
+            return (double)commentsQty/postsQty;
         } else {
             return 0;
         }
     }
 
-    public void showStatistics() {
-        System.out.println("Users: " + users);
-        System.out.println("Posts: " + posts);
-        System.out.println("Comments: " + comments);
-        System.out.println("Posts average user" + postsPerUser);
-        System.out.println("Comments average user" + commentsPerUser);
-        System.out.println("Comments average post" + commentsPerPost);
-    }
-
-    public int getUsers() {
-        return users;
-    }
-
-    public int getPosts() {
-        return posts;
-    }
-
-    public int getComments() {
-        return comments;
-    }
-
-    public double getPostsPerUser() {
-        return postsPerUser;
-    }
-
-    public double getCommentsPerUser() {
-        return commentsPerUser;
-    }
-
-    public double getCommentsPerPost() {
-        return commentsPerPost;
+    public void showStatistics(){
+        System.out.println("Forum advanced statistics:");
+        System.out.println("Users quantity: " + usersQty);
+        System.out.println("Posts quantity: " + postsQty);
+        System.out.println("Comments quantity: " + commentsQty);
+        System.out.println("Posts average per user" + postsAvgPerUser);
+        System.out.println("Comments average per user" + commentsAvgPerUser);
+        System.out.println("Comments average per post" + commentsAvgPerPost);
     }
 }
