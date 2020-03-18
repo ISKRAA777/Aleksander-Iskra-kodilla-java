@@ -36,9 +36,13 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(0, forumStatistics.getPostsQty());
-        assertEquals(0, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(0, forumStatistics.getCommentsAvgPerPost(), 0.01);
+
+        assertEquals(10, forumStatistics.getUsers());
+        assertEquals(0, forumStatistics.getPosts());
+        assertEquals(40, forumStatistics.getComments());
+        assertEquals(0.0, forumStatistics.getPostsPerUser(), 0.0);
+        assertEquals(4.0, forumStatistics.getCommentsPerUser(), 0.0);
+        assertEquals(0, forumStatistics.getCommentsPerPost(), 0.01);
 
     }
 
@@ -49,9 +53,12 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(1000, forumStatistics.getPostsQty());
-        assertEquals(100, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(0.04, forumStatistics.getCommentsAvgPerPost(), 0.01);
+        assertEquals(10, forumStatistics.getUsers());
+        assertEquals(1000, forumStatistics.getPosts());
+        assertEquals(40, forumStatistics.getComments());
+        assertEquals(100, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(4.0, forumStatistics.getCommentsPerUser(), 0.0);
+        assertEquals(0.04, forumStatistics.getCommentsPerPost(), 0.01);
     }
 
     @Test
@@ -61,10 +68,16 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(0, forumStatistics.getCommentsQty());
-        assertEquals(0, forumStatistics.getCommentsAvgPerUser(), 0.01);
-        assertEquals(0, forumStatistics.getCommentsAvgPerPost(), 0.01);
+
+        assertEquals(10, forumStatistics.getUsers());
+        assertEquals(20, forumStatistics.getPosts());
+        assertEquals(0, forumStatistics.getComments());
+        assertEquals(2, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(0, forumStatistics.getCommentsPerUser(), 0.0);
+        assertEquals(0.0, forumStatistics.getCommentsPerPost(), 0.01);
+
     }
+
 
     @Test
     public void testCalculateAdvStatisticsLessCommentsThanPosts(){
@@ -74,25 +87,25 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(10, forumStatistics.getPostsQty());
-        assertEquals(2, forumStatistics.getCommentsQty());
-        assertEquals(1, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(0.2, forumStatistics.getCommentsAvgPerUser(), 0.01);
-        assertEquals(0.2, forumStatistics.getCommentsAvgPerPost(), 0.01);
+        assertEquals(10, forumStatistics.getUsers());
+        assertEquals(10, forumStatistics.getPosts());
+        assertEquals(2, forumStatistics.getComments());
+        assertEquals(1, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(0.2, forumStatistics.getCommentsPerUser(), 0.01);
+        assertEquals(0.2, forumStatistics.getCommentsPerPost(), 0.01);
     }
 
     @Test
     public void testCalculateAdvStatisticsMoreCommentsThanPosts(){
-//Given
-
-        //When
+//Given & When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(20, forumStatistics.getPostsQty());
-        assertEquals(40, forumStatistics.getCommentsQty());
-        assertEquals(2, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(4, forumStatistics.getCommentsAvgPerUser(), 0.01);
-        assertEquals(2, forumStatistics.getCommentsAvgPerPost(), 0.01);
+        assertEquals(10, forumStatistics.getUsers());
+        assertEquals(20, forumStatistics.getPosts());
+        assertEquals(40, forumStatistics.getComments());
+        assertEquals(2, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(4, forumStatistics.getCommentsPerUser(), 0.01);
+        assertEquals(2, forumStatistics.getCommentsPerPost(), 0.01);
     }
 
     @Test
@@ -103,9 +116,12 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(0, forumStatistics.getUsersQty());
-        assertEquals(0, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(0, forumStatistics.getCommentsAvgPerUser(), 0.01);
+        assertEquals(0, forumStatistics.getUsers());
+        assertEquals(20, forumStatistics.getPosts());
+        assertEquals(40, forumStatistics.getComments());
+        assertEquals(0, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(0, forumStatistics.getCommentsPerUser(), 0.01);
+        assertEquals(2, forumStatistics.getCommentsPerPost(), 0.01);
 
     }
 
@@ -120,8 +136,12 @@ public class ForumStatisticTestSuite {
 //When
         forumStatistics.calculateAdvStatistics(statisticsMock);
 //Then
-        assertEquals(100, forumStatistics.getUsersQty());
-        assertEquals(0.2, forumStatistics.getPostsAvgPerUser(), 0.01);
-        assertEquals(0.4, forumStatistics.getCommentsAvgPerUser(), 0.01);
+        assertEquals(100, forumStatistics.getUsers());
+        assertEquals(20, forumStatistics.getPosts());
+        assertEquals(40, forumStatistics.getComments());
+        assertEquals(0.2, forumStatistics.getPostsPerUser(), 0.01);
+        assertEquals(0.4, forumStatistics.getCommentsPerUser(), 0.01);
+        assertEquals(2, forumStatistics.getCommentsPerPost(), 0.01);
+
     }
 }
