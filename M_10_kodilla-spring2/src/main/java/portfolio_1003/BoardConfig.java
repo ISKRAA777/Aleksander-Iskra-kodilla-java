@@ -1,6 +1,7 @@
 package portfolio_1003;
 
 import org.springframework.context.annotation.*;
+
 @Configuration
 public class BoardConfig {
     @Bean

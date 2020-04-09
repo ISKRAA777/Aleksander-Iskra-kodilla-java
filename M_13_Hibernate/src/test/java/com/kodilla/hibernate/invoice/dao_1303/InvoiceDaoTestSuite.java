@@ -28,7 +28,7 @@ public class InvoiceDaoTestSuite {
         Product fanta = new Product("fanta");
         Product snikers = new Product("snikers");
 
-        Item itemcocaCola= new Item(cocaCola, new BigDecimal(3), 2);
+        Item itemcocaCola = new Item(cocaCola, new BigDecimal(3), 2);
         Item itemFanta = new Item(fanta, new BigDecimal(2), 1);
         Item itemSnikers = new Item(snikers, new BigDecimal(4), 1);
 

@@ -55,7 +55,7 @@ public class TaskFactoryTest {
     }
 
     @Test
-    public void testNullTask(){
+    public void testNullTask() {
 //Given
         TaskFactory taskFactory = new TaskFactory();
 //When

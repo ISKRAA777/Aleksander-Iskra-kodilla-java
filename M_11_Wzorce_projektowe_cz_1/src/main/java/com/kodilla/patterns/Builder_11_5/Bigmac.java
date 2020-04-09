@@ -60,7 +60,8 @@ public class Bigmac {
             ingredientsTypes.add(ingredients);
             return this;
         }
-        public Bigmac build (){
+
+        public Bigmac build() {
             return new Bigmac(roll, burgers, souse, ingredientsTypes);
         }
     }

@@ -18,6 +18,7 @@ public final class Library implements Cloneable {
     public Set<Book> getBooks() {
         return books;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -25,6 +26,7 @@ public final class Library implements Cloneable {
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
+
     public boolean addBook(Book book) {
         return books.add(book);
     }
