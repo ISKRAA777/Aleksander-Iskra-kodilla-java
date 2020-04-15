@@ -1,1 +1,3 @@
 rootProject.name = 'kodilla-patterns2'
+include 'M_22_Rozszerzenie_bazy_danych_o_bardziej_zaawansowane_przypadki'
+
